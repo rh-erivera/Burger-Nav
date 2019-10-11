@@ -180,8 +180,8 @@ export default {
   }
   .side-nav img {
     width: 50%;
-    top: 30px;
-    left: 65px;
+    top: 34px;
+    left: 85px;
     padding-bottom: 75px;
     position: absolute;
     opacity: 0;
