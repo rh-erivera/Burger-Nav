@@ -177,6 +177,7 @@ export default {
     background: white;
     height: 100vh;
     opacity: 0;
+    overflow-y: scroll;
   }
   .side-nav img {
     width: 50%;
