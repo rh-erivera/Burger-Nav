@@ -123,7 +123,7 @@ export default {
   header {
     margin: 0 auto;
     padding-top: 25px;
-    width: 1000px;
+    width: 1024px;
     height: 125px;
   }
   .top-nav {
@@ -181,7 +181,7 @@ export default {
   .side-nav img {
     width: 50%;
     top: 34px;
-    left: 85px;
+    left: 60px;
     padding-bottom: 75px;
     position: absolute;
     opacity: 0;
