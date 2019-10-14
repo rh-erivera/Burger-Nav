@@ -123,7 +123,7 @@ export default {
   header {
     margin: 0 auto;
     padding-top: 25px;
-    width: 1024px;
+    width: 1060px;
     height: 125px;
   }
   .top-nav {
