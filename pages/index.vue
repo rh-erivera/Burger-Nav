@@ -11,19 +11,19 @@
           <a href=""><p>BABY & CHILD</p></a>
           <a href=""><p>TEEN</p></a>
         </div>
-        <div class="sub-nav" id="subNav2" ref="subNav2">
+        <div class="sub-nav" id="subNav2" ref="subNav2" style="border-bottom: none;">
           <p class="sub-nav-title" style="padding-bottom: 20px;">PLACES</p>
           <a href=""><p>GALLERIES</p></a>
           <a href=""><p>GUESTHOUSES</p></a>
           <a href=""><p>RESTAURANTS</p></a>
           <a href=""><p>RESIDENCES</p></a>
         </div>
-        <div class="sub-nav" id="subNav3" ref="subNav3" style="border-bottom: none;">
+        <!-- <div class="sub-nav" id="subNav3" ref="subNav3" style="border-bottom: none;">
           <p class="sub-nav-title" style="padding-bottom: 20px;">SPACES & SERVICES</p>
           <a href=""><p>PLANES</p></a>
           <a href=""><p>YACHTS</p></a>
           <a href=""><p>INTERIOR DESIGN</p></a>
-        </div>
+        </div> -->
       </div>
       <div class="top-nav">
         <div class="top-left">
@@ -84,7 +84,7 @@ export default {
   methods: {
     showNav() {
       if (this.sideNavActive) {
-          this.$refs.subNav3.style.opacity = 0
+          // this.$refs.subNav3.style.opacity = 0
           this.$refs.subNav2.style.opacity = 0
           this.$refs.subNav1.style.opacity = 0
           this.$refs.logo.style.opacity = 0
@@ -98,7 +98,7 @@ export default {
         setTimeout(() => {
           this.$refs.subNav1.style.opacity = 1
           this.$refs.subNav2.style.opacity = 1
-          this.$refs.subNav3.style.opacity = 1
+          // this.$refs.subNav3.style.opacity = 1
         }, 250)
         setTimeout(() => {
           this.$refs.logo.style.opacity = 1
