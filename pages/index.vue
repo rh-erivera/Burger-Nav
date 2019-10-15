@@ -181,12 +181,18 @@ export default {
     opacity: 0;
     overflow-y: scroll;
   }
+  .side-nav-title {
+    padding: 34px 60px 0;
+    position: fixed;
+    background-color: white;
+    width: 180px;
+  }
   .side-nav img {
-    width: 50%;
-    top: 34px;
+    width: 75%;
+    /* top: 34px;
     left: 60px;
     padding-bottom: 75px;
-    position: absolute;
+    position: absolute; */
     opacity: 0;
     transition: all .5s ease-in;
   }
