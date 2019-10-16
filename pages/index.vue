@@ -6,25 +6,25 @@
           <img src="rh-interiors.png" id="logo" ref="logo" alt="">
         </div>
         <div class="sub-nav" id="subNav1" ref="subNav1" style="padding-top: 100px;">
-          <p class="sub-nav-title" style="padding-bottom: 20px;">PRODUCTS</p>
-          <a href=""><p>MODERN</p></a>
-          <a href=""><p>SKI HOUSE</p></a>
-          <a href=""><p>BEACH HOUSE</p></a>
-          <a href=""><p>BABY & CHILD</p></a>
-          <a href=""><p>TEEN</p></a>
+          <p class="sub-nav-title" style="padding-bottom: 20px;">THE PRODUCTS</p>
+          <a href=""><p>INTERIORS / MODERN / OUTDOOR</p></a>
+          <a href=""><p>BEACH HOUSE / SKI HOUSE / COLOR</p></a>
+          <a href=""><p>BABY / CHILD / TEEN</p></a>
+          <a href=""><p>WATERWORKS BATH & KITCHEN</p></a>
         </div>
         <div class="sub-nav" id="subNav2" ref="subNav2">
-          <p class="sub-nav-title" style="padding-bottom: 20px;">PLACES</p>
+          <p class="sub-nav-title" style="padding-bottom: 20px;">THE PLACES</p>
           <a href=""><p>GALLERIES</p></a>
           <a href=""><p>GUESTHOUSES</p></a>
           <a href=""><p>RESTAURANTS</p></a>
           <a href=""><p>RESIDENCES</p></a>
         </div>
         <div class="sub-nav" id="subNav3" ref="subNav3" style="border-bottom: none;">
-          <p class="sub-nav-title" style="padding-bottom: 20px;">SPACES & SERVICES</p>
-          <a href=""><p>PLANES</p></a>
-          <a href=""><p>YACHTS</p></a>
+          <p class="sub-nav-title" style="padding-bottom: 20px;">THE SPACES & SERVICES</p>
+          <a href=""><p>ARCHITECTURE</p></a>
           <a href=""><p>INTERIOR DESIGN</p></a>
+          <a href=""><p>LANDSCAPE ARCHITECTURE</p></a>
+          <a href=""><p>PLANE / YACHT DESIGN & CHARTER</p></a>
         </div>
       </div>
       <div class="top-nav">
@@ -217,9 +217,9 @@ export default {
     font-size: 11pt;
     padding-top: 10px;
     letter-spacing: .08em;
-    line-height: 6.67pt;
+    line-height: 13.67pt;
     color: #333;
-    padding-bottom: 40px;
+    padding-bottom: 25px;
   }
 
 
