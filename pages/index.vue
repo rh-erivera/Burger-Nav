@@ -201,7 +201,7 @@ export default {
     transition: all .5s ease-in;
     border-bottom: 1px solid #ccc;
     color: #333;
-    width: 80%;
+    width: 81%;
     margin: 0 auto;
     padding-top: 25px;
     opacity: 0;
