@@ -120,7 +120,7 @@ export default {
     background: url('/bg.jpg');
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 732px;
   }
   header {
     margin: 0 auto;
