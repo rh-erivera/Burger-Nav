@@ -120,12 +120,12 @@ export default {
     background: url('/bg.jpg');
     background-size: cover;
     background-position: center;
-    height: 732px;
+    height: 761px;
   }
   header {
     margin: 0 auto;
     padding-top: 25px;
-    width: 1060px;
+    width: 1130px;
     height: 125px;
   }
   .top-nav {
