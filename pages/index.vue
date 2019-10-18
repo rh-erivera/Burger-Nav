@@ -3,28 +3,34 @@
     <header>
       <div class="side-nav" id="sideNav" ref="sideNav">
         <div class="side-nav-title">
-          <img src="rh-interiors.png" id="logo" ref="logo" alt="">
+          <img src="RH_World_Black.png" id="logo" ref="logo" alt="">
         </div>
-        <div class="sub-nav" id="subNav1" ref="subNav1" style="padding-top: 100px;">
-          <p class="sub-nav-title" style="padding-bottom: 20px;">THE PRODUCTS</p>
-          <a href=""><p>INTERIORS / MODERN / OUTDOOR</p></a>
-          <a href=""><p>BEACH HOUSE / SKI HOUSE / COLOR</p></a>
-          <a href=""><p>BABY / CHILD / TEEN</p></a>
+        <div class="sub-nav" id="subNav1" ref="subNav1" style="padding: 75px 0 25px; ">
+          <p class="sub-nav-title">PRODUCTS</p>
+          <a href=""><p>INTERIORS</p></a>
+          <a href=""><p>MODERN</p></a>
+          <a href=""><p>OUTDOOR</p></a>
+          <a href=""><p>BEACH HOUSE</p></a>
+          <a href=""><p>SKI HOUSE</p></a>
+          <a href=""><p>COLOR</p></a>
+          <a href=""><p>BABY & CHILD</p></a>
+          <a href=""><p>TEEN</p></a>
           <a href=""><p>WATERWORKS BATH & KITCHEN</p></a>
         </div>
-        <div class="sub-nav" id="subNav2" ref="subNav2">
-          <p class="sub-nav-title" style="padding-bottom: 20px;">THE PLACES</p>
+        <div class="sub-nav" id="subNav2" ref="subNav2" style="padding-bottom: 25px;">
+          <p class="sub-nav-title">PLACES</p>
           <a href=""><p>GALLERIES</p></a>
           <a href=""><p>GUESTHOUSES</p></a>
           <a href=""><p>RESTAURANTS</p></a>
           <a href=""><p>RESIDENCES</p></a>
         </div>
-        <div class="sub-nav" id="subNav3" ref="subNav3" style="border-bottom: none;">
-          <p class="sub-nav-title" style="padding-bottom: 20px;">THE SPACES & SERVICES</p>
+        <div class="sub-nav" id="subNav3" ref="subNav3" style="border-bottom: none; padding-bottom: 50px;">
+          <p class="sub-nav-title">SPACES & SERVICES</p>
           <a href=""><p>ARCHITECTURE</p></a>
           <a href=""><p>INTERIOR DESIGN</p></a>
-          <a href=""><p>LANDSCAPE ARCHITECTURE</p></a>
-          <a href=""><p>PLANE / YACHT DESIGN & CHARTER</p></a>
+          <a href=""><p>LANDSCAPE DESIGN</p></a>
+          <a href=""><p>PLANE DESIGN & CHARTER</p></a>
+          <a href=""><p>YACHT DESIGN & CHARTER</p></a>
         </div>
       </div>
       <div class="top-nav">
@@ -35,16 +41,16 @@
               <span class="hamburger-inner"></span>
             </span>
           </button>
-          <img class="logo" src="RH-Logo-Grey.svg" alt="">
+          <img class="logo" src="RH_World_White.png" alt="">
         </div>
         <div class="top-right">
-          <a href="">shop rooms</a>
+          <!-- <a href="">shop rooms</a> -->
           <img class="search" src="search-icon.png" alt="">
-          <a href="">sign in</a>
-          <a href="">cart 0</a>
+          <a href="">HI EMMANUELLE </a><span class="down-arrow"></span>
+          <!-- <a href="">cart 0</a> -->
         </div>
       </div>
-      <div class="bottom-nav">
+      <!-- <div class="bottom-nav">
         <a href="">Living</a>
         <a href="">Dining</a>
         <a href="">Bed</a>
@@ -58,7 +64,7 @@
         <a href="">Art</a>
         <a href="">Outdoor</a>
         <a style="font-weight: 700;" href="">Sale</a>
-      </div>
+      </div> -->
     </header>
   </div>
 </template>
@@ -117,7 +123,7 @@ export default {
 
 <style>
   .container {
-    background: url('/bg.jpg');
+    background: url('/slide1.png');
     background-size: cover;
     background-position: center;
     height: 761px;
@@ -132,33 +138,42 @@ export default {
     display: flex;
     justify-content: space-between;
     padding-bottom: 10px;
-    border-bottom: 1px solid rgba(255,255,255,0.4);
+    /* border-bottom: 1px solid rgba(255,255,255,0.4); */
   }
   .top-left, .top-right {
     display: flex;
     align-items: center;
   }
   .top-right a {
-    padding: 0 10px;
+    padding-left: 10px;
+    padding-right: 1px;
     font-weight: 300;
-    line-height: 10px
+    font-size: 8pt;
+    letter-spacing: .1em;
+    color: white;
+    line-height: 23.95pt;
+  }
+  .down-arrow {
+    width: 0; 
+    height: 0; 
+    border-left: 3.5px solid transparent;
+    border-right: 3.5px solid transparent;
+    border-top: 3.5px solid white;
   }
   .bottom-nav {
     display: flex;
     justify-content: space-between;
   }
-  header a {
+  /* header a {
     color: white;
     font-weight: 500;
     font-size: 10px;
     line-height: 30px;
     letter-spacing: .15em;
     text-transform: uppercase;
-  }
+  } */
   .logo {
-    height: 29px;
-    width: 46px;
-    margin-left: -4px;
+    width: 40%;
   }
   .menu {
     width: 27.5px;
@@ -182,13 +197,13 @@ export default {
     overflow-y: scroll;
   }
   .side-nav-title {
-    padding: 34px 60px 0;
+    padding: 27px 71px 0;
     position: fixed;
     background-color: white;
-    width: 180px;
+    width: 134px;
   }
   .side-nav img {
-    width: 75%;
+    /* width: 75%; */
     /* top: 34px;
     left: 60px;
     padding-bottom: 75px;
@@ -208,18 +223,19 @@ export default {
   }
   .sub-nav-title {
     font-family: 'BaronSans-Roman', sans-serif;
+    padding-bottom: 10px;
     font-size: 6pt;
     letter-spacing: .1em;
     line-height: 6.67pt;
   }
   .sub-nav a > p {
-    font-family: 'CaslonRH-Thin', sans-serif;
-    font-size: 11pt;
-    padding-top: 10px;
+    font-family: 'BaronSans-Thin', sans-serif;
+    font-size: 10pt;
+    /* padding-top: 10px; */
     letter-spacing: .08em;
-    line-height: 13.67pt;
+    line-height: 25pt;
     color: #333;
-    padding-bottom: 25px;
+    /* padding-bottom: 25px; */
   }
 
 
@@ -252,7 +268,7 @@ export default {
 }
 .hamburger-box {
   width: 25px;
-  height: 0px;
+  height: 8px;
   display: inline-block;
   position: relative; }
 
