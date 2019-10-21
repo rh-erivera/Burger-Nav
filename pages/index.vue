@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container" id="bg" ref="bg">
     <header>
       <div class="side-nav" id="sideNav" ref="sideNav">
         <div class="side-nav-title">
@@ -35,36 +35,18 @@
       </div>
       <div class="top-nav">
         <div class="top-left">
-          <!-- <img class="menu" src="menu-icon.png" alt=""> -->
           <button @click="showNav()" class="hamburger hamburger--squeeze" type="button">
             <span class="hamburger-box">
               <span class="hamburger-inner"></span>
             </span>
           </button>
-          <img class="logo" src="RH_World_White.png" alt="">
+          <img class="logo" id="logoWhite" ref="logoWhite" src="RH_World_White.png" alt="">
         </div>
         <div class="top-right">
-          <!-- <a href="">shop rooms</a> -->
           <img class="search" src="search-icon.png" alt="">
           <a href="">HI EMMANUELLE </a><span class="down-arrow"></span>
-          <!-- <a href="">cart 0</a> -->
         </div>
       </div>
-      <!-- <div class="bottom-nav">
-        <a href="">Living</a>
-        <a href="">Dining</a>
-        <a href="">Bed</a>
-        <a href="">Bath</a>
-        <a href="">Lighting</a>
-        <a href="">Textiles</a>
-        <a href="">Rugs</a>
-        <a href="">Windows</a>
-        <a href="">Hardware</a>
-        <a href="">DÉCOR</a>
-        <a href="">Art</a>
-        <a href="">Outdoor</a>
-        <a style="font-weight: 700;" href="">Sale</a>
-      </div> -->
     </header>
   </div>
 </template>
@@ -74,7 +56,8 @@
 export default {
   data () {
     return {
-      sideNavActive: false
+      sideNavActive: false,
+      i: 1
     }
   },
   mounted () {
@@ -88,10 +71,20 @@ export default {
         }, false);
       })
     }
+    setInterval(() => {
+      if (this.i != 5 ) {
+        this.i++;
+        this.$refs.bg.style.backgroundImage = 'url(\'/slide'+this.i+'.png\')';
+      } else {
+        this.i = 1;
+        this.$refs.bg.style.backgroundImage = 'url(\'/slide'+this.i+'.png\')';
+      }
+    }, 4000)
   },
   methods: {
     showNav() {
       if (this.sideNavActive) {
+          this.$refs.logoWhite.style.opacity = 1
           this.$refs.subNav3.style.opacity = 0
           this.$refs.subNav2.style.opacity = 0
           this.$refs.subNav1.style.opacity = 0
@@ -101,6 +94,7 @@ export default {
           this.$refs.sideNav.style.width = '0px'
         }, 250)
       } else {
+        this.$refs.logoWhite.style.opacity = 0
         this.$refs.sideNav.style.opacity = 1
         this.$refs.sideNav.style.width = '300px'
         setTimeout(() => {
@@ -111,9 +105,6 @@ export default {
         setTimeout(() => {
           this.$refs.logo.style.opacity = 1
         }, 350)
-        // setTimeout(() => {
-        //   this.$refs.subNav3.style.opacity = 1
-        // }, 750)
       }
       this.sideNavActive = !this.sideNavActive
     }
@@ -123,10 +114,16 @@ export default {
 
 <style>
   .container {
-    background: url('/slide1.png');
+    background-image: url('/slide1.png');
     background-size: cover;
     background-position: center;
     height: 761px;
+    transition: all 1s ease-in;
+    animation: fadeIn 1s ease-in;
+  }
+  @keyframes fadeIn {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
   }
   header {
     margin: 0 auto;
@@ -138,7 +135,6 @@ export default {
     display: flex;
     justify-content: space-between;
     padding-bottom: 10px;
-    /* border-bottom: 1px solid rgba(255,255,255,0.4); */
   }
   .top-left, .top-right {
     display: flex;
@@ -160,18 +156,6 @@ export default {
     border-right: 3.5px solid transparent;
     border-top: 3.5px solid white;
   }
-  .bottom-nav {
-    display: flex;
-    justify-content: space-between;
-  }
-  /* header a {
-    color: white;
-    font-weight: 500;
-    font-size: 10px;
-    line-height: 30px;
-    letter-spacing: .15em;
-    text-transform: uppercase;
-  } */
   .logo {
     width: 40%;
   }
@@ -203,15 +187,9 @@ export default {
     width: 134px;
   }
   .side-nav img {
-    /* width: 75%; */
-    /* top: 34px;
-    left: 60px;
-    padding-bottom: 75px;
-    position: absolute; */
     opacity: 0;
     transition: all .5s ease-in;
   }
-
   .sub-nav {
     transition: all .5s ease-in;
     border-bottom: 1px solid #ccc;
@@ -231,11 +209,9 @@ export default {
   .sub-nav a > p {
     font-family: 'BaronSans-Thin', sans-serif;
     font-size: 10pt;
-    /* padding-top: 10px; */
     letter-spacing: .08em;
     line-height: 25pt;
     color: #333;
-    /* padding-bottom: 25px; */
   }
 
 

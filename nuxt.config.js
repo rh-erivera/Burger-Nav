@@ -13,7 +13,12 @@ export default {
     ],
     link: [
       { rel: 'stylesheet', href: 'https://use.typekit.net/msm7xgo.css'},
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'preload', href: '/slide1.png', as: 'image'},
+      { rel: 'preload', href: '/slide2.png', as: 'image'},
+      { rel: 'preload', href: '/slide3.png', as: 'image'},
+      { rel: 'preload', href: '/slide4.png', as: 'image'},
+      { rel: 'preload', href: '/slide5.png', as: 'image'},
     ]
   },
   /*
