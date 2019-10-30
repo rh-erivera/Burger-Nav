@@ -181,7 +181,7 @@ export default {
     overflow-y: scroll;
   }
   .side-nav-title {
-    padding: 27px 71px 0;
+    padding: 31px 71px 0;
     position: fixed;
     background-color: white;
     width: 134px;
