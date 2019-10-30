@@ -18,7 +18,7 @@ export default {
       { rel: 'preload', href: '/slide2.png', as: 'image'},
       { rel: 'preload', href: '/slide3.png', as: 'image'},
       { rel: 'preload', href: '/slide4.png', as: 'image'},
-      { rel: 'preload', href: '/slide5.png', as: 'image'},
+      { rel: 'preload', href: '/slide5.png', as: 'image'}
     ]
   },
   /*
